@@ -1,6 +1,3 @@
-//Webコンテンツデザイン演習 最終レポート
-//GK7322 大畠 愛
-
 window.onload = load_songle; //画面読み込み完了時のイベントハンドラ
 window.onSongleWidgetReady = ready; //songleWidgetのイベントハンドラ
 function load_songle() { //イベントハンドラ(load_songle)を定義

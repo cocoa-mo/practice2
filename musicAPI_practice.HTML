@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ja">
+     <head>
+          <meta charset="utf8">
+          <title>Javascriptと音楽APIの連動</title>
+          <style>
+          .notes {   text-align: center;
+          }
+          table {   width: 500px
+                    text-align: center;
+                    margin-left: auto;
+                    margin-right: auto;
+                    border-collapse: collapse;
+                    border: solid 2px orange;
+          }
+          table td {   border: dashed 1px orange;
+                       padding: 3px 10px;
+          }
+          .yellow{   background-color:#FFFF33;   }
+          .purple{   background-color:#9057FF;   }
+          .chord{   text-align: center;   }
+          </style>
+     </head>
+     <body class=yellow>
+       <center>
+       <h1>Javascriptと音楽APIの連動</h1>
+       </center>
+       <h3>Three.jsとSongle Widget、Javascriptを連動させることで音楽に合わせてオブジェクトを動かします。</h3>
+         <ul>
+           <li>サビに入る度にオブジェクトの動きが変化します。</li>
+           <li>途中停止や途中再生、連続での再生は想定されていません。</li>
+           <li>曲が終わったら画面をリロードしてください。</li>
+         </ul>
+       <script src="three.min.js"></script>
+       <script src="TrackballControls.js"></script>
+       <script src="https://widget.songle.jp/v1/api.js"></script>
+       <script src="musicAPI_practice.js"></script>
+       <div id="chord" class="chord"></div>
+       <br></br>
+     </body>
+</html>
